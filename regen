@@ -1,0 +1,4 @@
+export ARCH=arm64
+make X00T_defconfig
+cp .config arch/arm64/configs/X00T_defconfig
+git commit -am "defconfig: regenerate"
