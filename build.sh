@@ -39,7 +39,7 @@ compile()
 	echo -e ${LGR} "######### Compiling kernel #########${NC}"
 	make -j$(nproc --all) O=out \
                       ARCH=${ARCH}\
-                          CROSS_COMPILE="$HOME/kernel/toolchain/arm64-gcc/bin/aarch64-elf-" \
+                          CROSS_COMPILE="$HOME/kernel/toolchain/gcc11-arm64/aarch64-linux-elf/bin/aarch64-linux-elf-" \
 					      CROSS_COMPILE_ARM32="$HOME/kernel/toolchain/arm32-gcc/bin/arm-eabi-"
 
 }
